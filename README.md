@@ -1,5 +1,31 @@
 # Trabajo Práctico: Gestión de Personajes de Marvel
 
+## Clonación del Proyecto
+
+- Abre tu terminal
+- Navega a la carpeta donde deseas clonar el proyecto
+- Clona el repositorio usando el siguiente comando:
+
+``` bash
+git clone URL_DEL_REPOSITORIO
+```
+
+- Accede al directorio del proyecto
+  
+``` bash
+cd nombre-del-proyecto
+```
+
+## Instalación de dependencias
+
+- Una vez que hayas clonado el proyecto, necesitas instalar las dependencias necesarias. Para ello, asegúrate de tener [Node.js](https://nodejs.org/) y [npm](https://www.npmjs.com/) instalados en tu sistema. Ejecuta el siguiente comando en la terminal dentro del directorio del proyecto:
+
+``` bash
+npm install
+```
+
+- Este comando leerá el archivo `package.json` y descargará todas las dependencias especificadas en la sección `dependencies`. Las dependencias se almacenarán en una carpeta llamada `node_modules` dentro del directorio del proyecto.
+
 ## Descripción
 
 Desarrollar una aplicación en Angular que permita gestionar una base de datos de personajes de Marvel. La aplicación debe conectarse a un backend simulado usando JSON Server y permitir operaciones básicas de creación, visualización, edición y eliminación de personajes. Cada personaje tendrá un nombre, una imagen y un rol.
