@@ -1,0 +1,82 @@
+{
+  "personajes": [
+    {
+      "id": "1",
+      "nombre": "Iron Man",
+      "rol": "Héroe",
+      "imagen": "https://th.bing.com/th/id/R.11879dc88fb27ed4a8233ff1a0dcbe30?rik=fCRVeAaLRiqwLw&riu=http%3a%2f%2fwww.geek-officiel.com%2fwp-content%2fuploads%2f2015%2f06%2firon-man1.jpeg&ehk=5NunF%2bH46iyd7HAW5glmE8Q1sqVDbjCgwn88YWNf4zA%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+      "nombre": "Spider-Man",
+      "rol": "Héroe",
+      "imagen": "https://th.bing.com/th/id/OIP.RFSByah92-TB8Z3MJpdqiQHaEK?rs=1&pid=ImgDetMain",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "nombre": "Thor",
+      "rol": "Héroe",
+      "imagen": "https://th.bing.com/th/id/OIP.xQixko1OcS41VOw03hBorQHaEo?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "4",
+      "nombre": "Hulk",
+      "rol": "Héroe",
+      "imagen": "https://th.bing.com/th/id/R.b0a3949f3de1d73d2ba38e2473865773?rik=1EhWTM4sPAeGgw&pid=ImgRaw&r=0"
+    },
+    {
+      "id": "5",
+      "nombre": "Capitán América",
+      "rol": "Héroe",
+      "imagen": "https://th.bing.com/th/id/OIP.8Gaq6iwjpVHXLBni_Gc3IAHaF7?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "6",
+      "nombre": "Black Widow",
+      "rol": "Héroe",
+      "imagen": "https://th.bing.com/th/id/OIP.bn1lXzL8T-ol74Fyt6v8HAHaEo?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "7",
+      "nombre": "Doctor Strange",
+      "rol": "Héroe",
+      "imagen": "https://th.bing.com/th/id/R.959ae46b979801d5cc451fa8dc27e2e9?rik=xXG9dPxJS2TVpQ&pid=ImgRaw&r=0"
+    },
+    {
+      "id": "8",
+      "nombre": "Loki",
+      "rol": "Villano",
+      "imagen": "https://th.bing.com/th/id/OIP.JoeSrfNIN2WXAC9hD53mHQHaEK?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "9",
+      "nombre": "Thanos",
+      "rol": "Villano",
+      "imagen": "https://th.bing.com/th/id/OIP.Kd5AW99EDmjYFkmNwuZWxQHaEo?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "10",
+      "nombre": "Venom",
+      "rol": "Antihéroe",
+      "imagen": "https://th.bing.com/th/id/OIP.5-sZbcFJ8ZyQc06JDy0hkAHaEK?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "64fe",
+      "nombre": "Beast",
+      "rol": "Heroe",
+      "imagen": "https://th.bing.com/th/id/R.9a1830304c3e9f04e2eeaaa65437d654?rik=4nZ0Ffozyhgpvg&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fultimate-marvel-cinematic-universe%2fimages%2fe%2fe9%2fBeast_by_uncannyknack-d7ykgzd.jpg%2frevision%2flatest%3fcb%3d20151105082727&ehk=5wRD3miZXWYhVoaEySDoQMpabIFYRgMVnQhrZ1vRPeo%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+      "id": "7973",
+      "nombre": "Storm",
+      "rol": "Heroe",
+      "imagen": "https://th.bing.com/th/id/R.9417854282189120b070cd3f1ba5b0db?rik=%2fFSm6%2bjN9XsHYw&pid=ImgRaw&r=0"
+    },
+    {
+      "id": "eb8f",
+      "nombre": "Magneto",
+      "rol": "Villano",
+      "imagen": "https://orig00.deviantart.net/8e7b/f/2018/044/b/2/b23b2ddb903b74b4e4826ad0b915772f-dc3031m.jpg"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<app-add-character [personajeSeleccionado]="personajeSeleccionado" (actualizarListado)="actualizarListado()">
+
+</app-add-character>
+<section>
+  <h2>Lista de Personajes</h2>
+  <div class="lista-container">
+    @for(item of characters; track item.id){
+      <div class="card-personaje">
+        <div class="card-actions">
+          <button class="action-button edit-button" (click)="editarPersonaje(item)">
+            <i class="fas fa-edit"></i>
+          </button>
+          <button class="action-button delete-button" (click)="eliminarPersonaje(item.id)">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+        <img src="{{ item.imagen }}" alt="{{ item.nombre }}" class="imagen"/>
+        <div class="info-personaje">
+          <h4>{{ item.nombre }}</h4>
+          <p class="rol">{{ item.rol }}</p>
+
+        </div>
+      </div>
+    }
+  </div>
+</section>

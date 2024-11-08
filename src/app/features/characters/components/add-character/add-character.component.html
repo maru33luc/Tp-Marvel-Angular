@@ -1,0 +1,67 @@
+<div class="form-container">
+  <h2 class="form-title">Agregar Personaje</h2>
+  <form [formGroup]="form" (ngSubmit)="enviar()">
+    <div class="form-group">
+      <label class="form-label">Nombre</label>
+      <input
+        class="form-input"
+        type="text"
+        formControlName="nombre"
+        placeholder="Ingrese el nombre"
+      />
+      <span class="error-message">
+        @if(form.get('nombre')?.errors?.['required'] &&
+        form.get('nombre')?.touched){ El nombre es requerido }
+      </span>
+      <span class="error-message">
+        @if(form.get('nombre')?.errors?.['pattern'] &&
+        form.get('nombre')?.touched){ Solo se permiten letras, espacios y guiones }
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Rol</label>
+      <input
+        class="form-input"
+        type="text"
+        formControlName="rol"
+        placeholder="Ingrese el rol"
+      />
+      <span class="error-message">
+        @if(form.get('rol')?.errors?.['required'] && form.get('rol')?.touched){
+        El rol es requerido }
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Imagen</label>
+      <input
+        class="form-input"
+        type="text"
+        formControlName="imagen"
+        placeholder="URL de la imagen (formato: .jpg, .jpeg, .png)"
+      />
+      <span class="error-message">
+        @if(form.get('imagen')?.errors?.['required'] &&
+        form.get('imagen')?.touched){ La URL de la imagen es requerida }
+      </span>
+      <span class="error-message">
+        @if(form.get('imagen')?.errors?.['pattern'] &&
+        form.get('imagen')?.touched){ La URL de la imagen debe terminar en .jpg,
+        .jpeg o .png }
+      </span>
+    </div>
+
+
+@if(this.personajeSeleccionado){
+  <button class="form-button" type="submit" [disabled]="form.invalid">
+    Editar Personaje
+  </button>
+}@else {
+  <button class="form-button" type="submit" [disabled]="form.invalid">
+    Agregar Personaje
+  </button>
+}
+
+  </form>
+</div>
