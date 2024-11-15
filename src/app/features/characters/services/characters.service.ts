@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Character } from '../interfaces/character';
 import { Observable } from 'rxjs';
+import { environment } from '../../../../environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ export class CharactersService {
 
 constructor(private http: HttpClient) { }
 
-url: string = 'http://localhost:3000/personajes';
+url: string = environment.apiUrl;
 
 getCharacters(): Observable<Character[]> {
   return this.http.get<Character[]>(this.url);
