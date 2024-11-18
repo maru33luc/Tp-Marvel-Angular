@@ -26,14 +26,21 @@ import { AuthService } from '../../../features/auth/services/auth.service';
             >Home</a
           >
           <a routerLink="/admin" routerLinkActive="active">Admin</a>
-          <a
-            routerLink="/login"
-            routerLinkActive="active"
-            (click)="onAuthClick()"
-            >{{ isLoggedIn ? 'Logout' : 'Login' }}</a
-          >
 
+        @if(!isLoggedIn()){
+
+          <a routerLink="/login"
+            routerLinkActive="active"
+            >Login</a
+          >
           <a routerLink="/register" routerLinkActive="active">Register</a>
+        }
+
+        @if(isLoggedIn()){
+          <a (click)="logout()">Logout</a>
+          <p>Bienvenido {{userName()}} !</p>
+        }
+
         </div>
       </div>
     </nav>
@@ -43,18 +50,14 @@ import { AuthService } from '../../../features/auth/services/auth.service';
 })
 export class NavBarComponent {
   authService = inject(AuthService);
-  isLoggedIn = this.authService.isLoggedIn;
+  userName = computed(()=>{
+    return this.authService.user()?.nombre;
+  })
+  isLoggedIn = computed(()=>{
+    return this.authService.user();
+  });
 
-  ngOnInit(): void {
-    this.chequearLogin();
-  }
-
-  chequearLogin(): void {
-    this.isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-  }
-
-  onAuthClick(): void {
-    this.isLoggedIn ? this.authService.logout() : this.authService.login();
-    this.isLoggedIn = !this.isLoggedIn;
-  }
+logout(): void {
+  this.authService.logout();
+}
 }

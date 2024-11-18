@@ -8,7 +8,8 @@ export const authGuardFn : CanActivateFn = () => {
 const authService = inject(AuthService);
 const router = inject(Router)
 
-if(authService.isLoggedIn || localStorage.getItem('isLoggedIn')){
+
+if(authService.user()){
   return true;
 }
 alert('No estás autenticado');

@@ -10,17 +10,17 @@ import { authGuardFnRegister } from './features/auth/guards/auth-guard-fn-regist
 export const routes: Routes = [
     {
         path: 'home',
-        component: DashboardPageComponent 
+        component: DashboardPageComponent
     },
     {
         path: 'admin',
-        component: AdminPanelComponent, 
+        component: AdminPanelComponent,
         canActivate: [authGuardFn]
     },
     {
         path: 'login',
         component: LoginComponent,
-        
+
     },
     // {
     //     path: 'register',
@@ -30,7 +30,7 @@ export const routes: Routes = [
 
     // Lazy Loading
     {
-        path: 'register', loadComponent: () => import('./features/auth/components/register/register.component').then(m=>m.RegisterComponent)
+        path: 'register', loadComponent: () => import('./features/auth/components/register/register.component').then(m=>m.RegisterComponent), canActivate: [authGuardFnRegister]
     },
     {
         path: '',

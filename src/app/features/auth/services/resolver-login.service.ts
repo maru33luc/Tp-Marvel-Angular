@@ -14,8 +14,8 @@ export class ResolverLoginService implements Resolve<void> {
   authService = inject(AuthService);
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-    return this.authService.login();
+    return ;
   }
 
-  
+
 }

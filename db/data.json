@@ -78,5 +78,24 @@
       "rol": "Villano",
       "imagen": "https://orig00.deviantart.net/8e7b/f/2018/044/b/2/b23b2ddb903b74b4e4826ad0b915772f-dc3031m.jpg"
     }
+  ],
+  "users":[
+    {
+      "id": "1",
+      "nombre": "Juan",
+      "email": "juan@gmail.com"
+    },
+    {
+      "id": "2",
+      "nombre": "Marina",
+      "email": "marina@gmail.com"
+    },
+    {
+      "id": "3",
+      "nombre": "Pedro",
+      "email": "juan@gmail.com"
+    }
+
+
   ]
 }
